@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e1b2aebf0f644e5e03945d3faea47b86 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e1b2aebf0f644e5e03945d3faea47b86" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e1b2aebf0f644e5e03945d3faea47b86 = L.map(
+                "map_e1b2aebf0f644e5e03945d3faea47b86",
+                {
+                    center: [51.585556, 21.551111],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_94c2f336bfaac84fb6b920bb0e27dccc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_94c2f336bfaac84fb6b920bb0e27dccc.addTo(map_e1b2aebf0f644e5e03945d3faea47b86);
+        
+    
+            var marker_d25e92f50fad140fc118074b94bc182a = L.marker(
+                [51.585556, 21.551111],
+                {
+}
+            ).addTo(map_e1b2aebf0f644e5e03945d3faea47b86);
+        
+    
+        var popup_cbb76f9e27393c46086a380bb86321fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74c61752487a02b8d34697944e9de635 = $(`<div id="html_74c61752487a02b8d34697944e9de635" style="width: 100.0%; height: 100.0%;"><h5>Kozienice</h5><br/>Kinga<br/>500</div>`)[0];
+                popup_cbb76f9e27393c46086a380bb86321fe.setContent(html_74c61752487a02b8d34697944e9de635);
+            
+        
+
+        marker_d25e92f50fad140fc118074b94bc182a.bindPopup(popup_cbb76f9e27393c46086a380bb86321fe)
+        ;
+
+        
+    
+    
+            var marker_e1c129151eb40200f8a8b529ef5594e7 = L.marker(
+                [51.782778, 22.624167],
+                {
+}
+            ).addTo(map_e1b2aebf0f644e5e03945d3faea47b86);
+        
+    
+        var popup_1f47a46f8dd4392491e05fe5e1a22e28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ecc0088bd0b7aabbfffda92434997ff = $(`<div id="html_0ecc0088bd0b7aabbfffda92434997ff" style="width: 100.0%; height: 100.0%;"><h5>Radzyń Podlaski</h5><br/>Wika<br/>400</div>`)[0];
+                popup_1f47a46f8dd4392491e05fe5e1a22e28.setContent(html_0ecc0088bd0b7aabbfffda92434997ff);
+            
+        
+
+        marker_e1c129151eb40200f8a8b529ef5594e7.bindPopup(popup_1f47a46f8dd4392491e05fe5e1a22e28)
+        ;
+
+        
+    
+    
+            var marker_845b005722122d8c7d8a0d6ffb6216a6 = L.marker(
+                [52.2125, 22.718889],
+                {
+}
+            ).addTo(map_e1b2aebf0f644e5e03945d3faea47b86);
+        
+    
+        var popup_6ac1e794ed2722eca7f0f9576be07962 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e21d89f64f1dd57ee2ac7809a24c0f9 = $(`<div id="html_8e21d89f64f1dd57ee2ac7809a24c0f9" style="width: 100.0%; height: 100.0%;"><h5>Łosice</h5><br/>Daria<br/>200</div>`)[0];
+                popup_6ac1e794ed2722eca7f0f9576be07962.setContent(html_8e21d89f64f1dd57ee2ac7809a24c0f9);
+            
+        
+
+        marker_845b005722122d8c7d8a0d6ffb6216a6.bindPopup(popup_6ac1e794ed2722eca7f0f9576be07962)
+        ;
+
+        
+    
+</script>
+</html>
