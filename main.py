@@ -1,4 +1,4 @@
-from utils.controller import get_user_info, add_user, remove_user, update_user
+from utils.controller import get_user_info, add_user, remove_user, update_user, get_coordinates, get_map
 from utils.model import users
 
 
