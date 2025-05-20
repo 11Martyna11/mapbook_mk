@@ -1,5 +1,5 @@
-users:list[dict]=[
-    {'name':'Martyna','location':'Zabki',"posts":5,},
-    {'name':'Wiktoria','location':'Radzymin',"posts":10,},
-    {'name':'Daria','location':'Losice',"posts":15,}
+users: list[dict] = [
+    {'name': 'Kinga', 'location': 'Kozienice', 'posts': 500, },
+    {'name': 'Wika', 'location': 'Radzyń', 'posts': 400, },
+    {'name': 'Daria', 'location': 'Łosice', 'posts': 200, }
 ]
