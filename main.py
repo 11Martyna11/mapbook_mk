@@ -64,6 +64,7 @@ def update_user(i):
     show_users()
     button_dodaj_obiekt.comfig(text='Dodaj', command=add_user)
 
+
     entry_imie.delete(0, END)
     entry_nazwisko.delete(0, END)
     entry_posts.delete(0, END)
