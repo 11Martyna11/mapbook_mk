@@ -2,6 +2,83 @@ from tkinter import *
 
 import tkintermapview
 
+users: list=[]
+
+def add_users()->None:
+    name=entry_imie.get()
+    surname=entry_nazwisko.get()
+    location=entry_miejscowosc.get()
+    posts=entry_posts.get()
+
+    user={'name':name,'surname':surname,'location':location,'posts':posts}
+    users.append(user)
+
+    print(users)
+
+    entry_imie.delete(0,END)
+    entry_nazwisko.delete(0,END)
+    entry_posts.delete(0,END)
+    entry_miejscowosc.delete(0,END)
+
+    entry_imie.focus()
+    show_users()
+
+
+
+def show_users()
+    listbox_lista_obiektow.delete(0,END)
+    for idx,user in enumerate(users):
+        listbox_lista_obiektow.insert(idx,f'{idx+1}. {user['name']}')
+
+def remove_user()
+    i=listbox_lista_obiektow.index(ACTIVE)
+    print(i)
+    users.pop(i)
+    show_users()
+
+def edit_user():
+    i=listbox_lista_obiektow.index(ACTIVE)
+    name=users[i]['name']
+    surname=users[i]['surname']
+    location=users[i]['location']
+    posts=users[i]['posts']
+
+    entry_imie.insert(0,name)
+    entry_nazwisko.insert(0,surname)
+    entry_miejscowosc.insert(0,location)
+    entry_posts.insert(0,posts)
+
+    button_dodaj_obiekt.comfig(text='Zapisz', command=lambda: update_user(i))
+
+def update_user(i):
+    name = entry_imie.get()
+    surname = entry_nazwisko.get()
+    location = entry_miejscowosc.get()
+    posts = entry_posts.get()
+
+    users[i]['name'] = name
+    users[i]['surname'] = surname
+    users[i]['location'] = location
+    users[i]['posts'] = posts
+
+    show_users()
+    button_dodaj_obiekt.comfig(text='Dodaj', command=add_user)
+
+    entry_imie.delete(0, END)
+    entry_nazwisko.delete(0, END)
+    entry_posts.delete(0, END)
+    entry_miejscowosc.delete(0, END)
+
+    entry_imie.focus()
+
+
+
+
+
+
+
+
+
 root = Tk()
 root.geometry("1200x700")
 root.title('Mapbook_mk')
@@ -62,7 +139,7 @@ entry_miejscowosc.grid(row=3, column=1)
 entry_posts=Entry(ramka_formularz)
 entry_posts.grid(row=4, column=1)
 
-button_dodaj_obiekt=Button(ramka_formularz, text='Dodaj')
+button_dodaj_obiekt=Button(ramka_formularz, text='Dodaj', command=add_user)
 button_dodaj_obiekt.grid(row=5, column=0, columnspan=2)
 
 # ramka_szczegoly_obiektow
@@ -106,3 +183,4 @@ map_widget.set_zoom(6)
 
 
 root.mainloop()
+
