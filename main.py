@@ -199,7 +199,7 @@ label_szczegoly_obiektu_posts.grid(row=1, column=6)
 label_szczegoly_obiektu_posts_wartosc = Label(ramka_szczegoly_obiektow, text='....')
 label_szczegoly_obiektu_posts_wartosc.grid(row=1, column=7)
 
-# ramka_mapa
+# ramka_dla_mapy
 map_widget = tkintermapview.TkinterMapView(ramka_mapa, width=1200, height=400, corner_radius=0)
 map_widget.grid(row=0, column=0, columnspan=2)
 map_widget.set_position(52.23, 21.0)
